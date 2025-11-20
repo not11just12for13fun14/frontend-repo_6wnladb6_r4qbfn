@@ -1,21 +1,11 @@
-import { ShieldCheck, Sparkles, CreditCard } from "lucide-react";
+import { ShieldCheck, Sparkles, CreditCard, Truck, Gift } from "lucide-react";
 
 const items = [
-  {
-    icon: ShieldCheck,
-    title: "Secure by design",
-    desc: "Encrypted, tokenized payments with zero compromise.",
-  },
-  {
-    icon: Sparkles,
-    title: "Premium finishes",
-    desc: "Matte textures, glass layers and subtle gradients that feel alive.",
-  },
-  {
-    icon: CreditCard,
-    title: "Flexible checkout",
-    desc: "Express pay, installments, and one-tap wallet support.",
-  },
+  { icon: ShieldCheck, title: "Secure by design", desc: "Encrypted, tokenized payments with zero compromise." },
+  { icon: Sparkles, title: "Premium finishes", desc: "Matte textures, glass layers and subtle gradients that feel alive." },
+  { icon: CreditCard, title: "Cash on delivery", desc: "Checkout supports COD by default — simple, safe, reliable." },
+  { icon: Truck, title: "Fast shipping", desc: "Tracked delivery with hassle-free returns." },
+  { icon: Gift, title: "Gifting ready", desc: "Minimal packaging and optional notes." },
 ];
 
 export default function Features() {
@@ -26,7 +16,7 @@ export default function Features() {
           {items.map(({ icon: Icon, title, desc }) => (
             <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-xl text-white">
               <div className="flex items-center gap-3">
-                <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400/70 to-blue-600/70">
+                <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-purple-500/70 to-purple-700/70">
                   <Icon className="h-5 w-5" />
                 </div>
                 <h3 className="font-semibold tracking-tight">{title}</h3>
